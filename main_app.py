@@ -25,12 +25,12 @@ footer {visibility: hidden;}
 </style> """, unsafe_allow_html=True)
 
 openai.api_key = st.secrets.openai_key
-st.header("Converse 💬 com a Resolução CVM 175, powered by LlamaIndex 🦙")
+st.header("Converse 💬 com a Resolução CVM 175")
 st.info("Desenvolvido a partir do código disponível neste [repositório Github](https://github.com/mvpalheta/4966_LLM)", icon="💡")
          
 if "messages" not in st.session_state.keys(): # Initialize the chat messages history
     st.session_state.messages = [
-        {"role": "assistant", "content": "Me pergunte algo relacionado à Resolução CVM 175!"}
+        {"role": "assistant", "content": "Pergunte-me algo relacionado à Resolução CVM 175!"}
     ]
 
 @st.cache_resource(show_spinner=False, ttl="30min")
